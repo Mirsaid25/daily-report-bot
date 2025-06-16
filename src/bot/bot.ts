@@ -35,8 +35,6 @@ export const botHandlers = {
 
     bot.command('stats', async (ctx) => {
       const members = groupMembers.getMembers();
-
-      console.log(members);
       
       if (!groupMembers.isAdmin(ctx.from?.id!)) {
         return ctx.reply('⛔ Эта команда только для администраторов');
@@ -63,7 +61,7 @@ export const botHandlers = {
       const isReply = ctx.message.reply_to_message?.message_id === storage.getReportMessageId();
       const parsed = utils.validateAnswer(ctx.message.text);
 
-      if (!isReply && !parsed) return;
+      if (!isReply || !parsed) return;
       if (!parsed) {
         await ctx.replyWithMarkdown(CONFIG.MESSAGES.ERROR_FORMAT, {
           reply_markup: Markup.inlineKeyboard([Markup.button.callback('Помощь', 'help')]).reply_markup,

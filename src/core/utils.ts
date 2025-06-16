@@ -34,15 +34,15 @@ export const utils = {
       const lines = message
         .split('\n')
         .filter((line) => line.trim())
-        .slice(0, 3);
+        .slice(0, 4);
 
-      if (lines.length < 3) return null;
+      if (lines.length < 4) return null;
 
       const answer: Answer = {
         q1: lines[0].replace(/^1[\.\)]\s*/, '').trim(),
         q2: lines[1].replace(/^2[\.\)]\s*/, '').trim(),
         q3: lines[2].replace(/^3[\.\)]\s*/, '').trim(),
-        q4: lines[2].replace(/^4[\.\)]\s*/, '').trim(),
+        q4: lines[3].replace(/^4[\.\)]\s*/, '').trim(),
       };
 
       return answer.q1 && answer.q2 && answer.q3 && answer.q4 ? answer : null;
