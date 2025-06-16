@@ -284,3 +284,7 @@
 {"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 20:53:37"}
 {"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 20:53:37"}
 {"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 20:54:46"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 21:21:27"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 21:21:27"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 21:21:27"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 21:21:32"}
