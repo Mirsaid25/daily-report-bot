@@ -36,17 +36,17 @@ async function main() {
 
     // === HTTP-сервер для Render ===
     const app = express();
-    const port = Number(process.env.PORT) || 3000;
 
-    app.get(
-      '/',
-      (req: Request, res: Response, next: NextFunction) => {
-        res.send('OK');
-      }
-    ); 
+    // Render по умолчанию выставляет PORT=10000, но можно переопределить в Dashboard
+    const port = Number(process.env.PORT) || 10000;
+    const host = '0.0.0.0';
 
-    app.listen(port, () => {
-      logger.info(`HTTP server listening on port ${port}`);
+    app.get('/', (req: Request, res: Response, next: NextFunction) => {
+      res.send('OK');
+    });
+
+    app.listen(port, host, () => {
+      logger.info(`HTTP server listening on ${host}:${port}`);
     });
   } catch (err) {
     logger.error('Startup error:', err);
