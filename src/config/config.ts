@@ -8,10 +8,10 @@ export const CONFIG = {
   TELEGRAM_TOKEN: process.env.TELEGRAM_TOKEN!,
   NOTION_TOKEN: process.env.NOTION_TOKEN!,
   TIME: {
-    MORNING_QUESTION: '25 16 * * *',
-    REMINDER_1: '26 16 * * *',
-    REMINDER_2: '27 16 * * *',
-    EVENING_REPORT: '28 16 * * *',
+    MORNING_QUESTION: '0 21 * * *',
+    REMINDER_1: '0 22 * * *',
+    REMINDER_2: '0 23 * * *',
+    EVENING_REPORT: '59 23 * * *',
     TIMEZONE: 'Asia/Tashkent',
   },
   MESSAGES: {
