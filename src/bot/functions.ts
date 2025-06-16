@@ -79,9 +79,10 @@ ${mentionList}`;
               parent: { database_id: CONFIG.DB_ID },
               properties: {
                 'Имя': { title: [{ text: { content: r.name } }] },
-                'Что сделал': { rich_text: [{ text: { content: r.q1 } }] },
-                'Проблемы': { rich_text: [{ text: { content: r.q2 } }] },
-                'Что будет делать': { rich_text: [{ text: { content: r.q3 } }] },
+                'Что ты сделал?': { rich_text: [{ text: { content: r.q1 } }] },
+                'Что ты не сделал?': { rich_text: [{ text: { content: r.q2 } }] },
+                'Что тебе мешало?': { rich_text: [{ text: { content: r.q3 } }] },
+                'Что планируешь завтра?': { rich_text: [{ text: { content: r.q4 } }] },
                 'Дата': { date: { start: dateISO } },
               },
             });

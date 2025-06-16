@@ -42,9 +42,10 @@ export const utils = {
         q1: lines[0].replace(/^1[\.\)]\s*/, '').trim(),
         q2: lines[1].replace(/^2[\.\)]\s*/, '').trim(),
         q3: lines[2].replace(/^3[\.\)]\s*/, '').trim(),
+        q4: lines[2].replace(/^4[\.\)]\s*/, '').trim(),
       };
 
-      return answer.q1 && answer.q2 && answer.q3 ? answer : null;
+      return answer.q1 && answer.q2 && answer.q3 && answer.q4 ? answer : null;
     } catch (err) {
       logger.error('Validation error:', err);
       return null;

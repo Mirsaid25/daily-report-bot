@@ -1,0 +1,60 @@
+{"adminCount":1,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:12:39"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:12:39"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:12:39"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:13:49"}
+{"adminCount":1,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:13:50"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:13:50"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:13:50"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:14:43"}
+{"adminCount":1,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:14:44"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:14:44"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:14:44"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:15:01"}
+{"adminCount":1,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:15:01"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:15:01"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:15:01"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:15:04"}
+{"adminCount":1,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:15:13"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:15:13"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:15:13"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:15:16"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:16:35"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:16:35"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:16:35"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:16:36"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:16:37"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:16:37"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:16:37"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:16:47"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:16:48"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:16:48"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:16:48"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 16:17:07"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:17:30"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:17:30"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:17:30"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:18:56"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:18:56"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:18:56"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:18:56"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:19:08"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:19:09"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:19:09"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:19:09"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 16:19:12"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:19:17"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:19:17"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:19:17"}
+{"level":"info","message":"Reminder sent to group: 1 pending","timestamp":"2025-06-16 16:20:00"}
+{"body":"{\"object\":\"error\",\"status\":404,\"code\":\"object_not_found\",\"message\":\"Could not find database with ID: 20faaade-a532-8044-9e74-f24210a5abf2. Make sure the relevant pages and databases are shared with your integration.\",\"request_id\":\"f257143a-9450-4ab8-bbec-d416b63225dd\"}","code":"object_not_found","headers":{},"level":"error","message":"Notion error: Could not find database with ID: 20faaade-a532-8044-9e74-f24210a5abf2. Make sure the relevant pages and databases are shared with your integration.","name":"APIResponseError","stack":"APIResponseError: Could not find database with ID: 20faaade-a532-8044-9e74-f24210a5abf2. Make sure the relevant pages and databases are shared with your integration.\n    at buildRequestError (/Users/max/Desktop/projects/daily-report/node_modules/@notionhq/client/src/errors.ts:240:12)\n    at Client.request (/Users/max/Desktop/projects/daily-report/node_modules/@notionhq/client/src/Client.ts:257:32)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /Users/max/Desktop/projects/daily-report/src/bot/functions.ts:78:13\n    at async Promise.all (index 0)\n    at sendReportsToNotion (/Users/max/Desktop/projects/daily-report/src/bot/functions.ts:75:7)\n    at Timeout._onTimeout (/Users/max/Desktop/projects/daily-report/node_modules/node-cron/src/scheduler/runner.ts:100:30)","status":404,"timestamp":"2025-06-16 16:21:01"}
+{"level":"info","message":"SIGTERM received. Shutting down...","timestamp":"2025-06-16 16:22:25"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:22:26"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:22:26"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:22:26"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 16:22:28"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-16 16:22:35"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 16:22:35"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 16:22:36"}
+{"level":"info","message":"Reminder sent to group: 1 pending","timestamp":"2025-06-16 16:26:00"}
+{"body":"{\"object\":\"error\",\"status\":404,\"code\":\"object_not_found\",\"message\":\"Could not find database with ID: 20faaade-a532-8044-9e74-f24210a5abf2. Make sure the relevant pages and databases are shared with your integration.\",\"request_id\":\"fba3bbc6-f74f-418a-b122-52e02881162d\"}","code":"object_not_found","headers":{},"level":"error","message":"Notion error: Could not find database with ID: 20faaade-a532-8044-9e74-f24210a5abf2. Make sure the relevant pages and databases are shared with your integration.","name":"APIResponseError","stack":"APIResponseError: Could not find database with ID: 20faaade-a532-8044-9e74-f24210a5abf2. Make sure the relevant pages and databases are shared with your integration.\n    at buildRequestError (/Users/max/Desktop/projects/daily-report/node_modules/@notionhq/client/src/errors.ts:240:12)\n    at Client.request (/Users/max/Desktop/projects/daily-report/node_modules/@notionhq/client/src/Client.ts:257:32)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at /Users/max/Desktop/projects/daily-report/src/bot/functions.ts:78:13\n    at async Promise.all (index 0)\n    at sendReportsToNotion (/Users/max/Desktop/projects/daily-report/src/bot/functions.ts:75:7)\n    at Timeout._onTimeout (/Users/max/Desktop/projects/daily-report/node_modules/node-cron/src/scheduler/runner.ts:100:30)","status":404,"timestamp":"2025-06-16 16:28:01"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 16:36:23"}
