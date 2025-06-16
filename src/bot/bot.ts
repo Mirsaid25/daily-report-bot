@@ -73,7 +73,6 @@ export const botHandlers = {
 
       storage.set(userId, { name, ...parsed });
       await ctx.replyWithMarkdown(CONFIG.MESSAGES.CONFIRMATION(name));
-      await utils.sendThanks(ctx);
     });
 
     bot.on('new_chat_members', (ctx) => groupMembers.handleNewMembers(ctx));

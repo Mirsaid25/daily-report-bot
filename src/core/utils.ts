@@ -51,15 +51,4 @@ export const utils = {
       return null;
     }
   },
-
-  sendThanks: async (ctx: Context) => {
-    try {
-      await new Promise((resolve) =>
-        setTimeout(resolve, 3000 + Math.random() * 7000)
-      );
-      await ctx.replyWithMarkdown(CONFIG.MESSAGES.THANKS);
-    } catch (err: any) {
-      logger.error('Failed to send thanks:', err);
-    }
-  },
 };

@@ -15,13 +15,8 @@ export const botFunctions = {
     try {
       storage.clear();
       const date = utils.getFormattedDate();
-      const keyboard = Markup.inlineKeyboard([
-        Markup.button.callback('Помощь', 'help'),
-        Markup.button.callback('Пример отчета', 'example'),
-      ]);
-      const msg = await utils.sendMessage(bot, CONFIG.GROUP_ID, CONFIG.MESSAGES.QUESTION(date), {
-        reply_markup: keyboard.reply_markup,
-      });
+  
+      const msg = await utils.sendMessage(bot, CONFIG.GROUP_ID, CONFIG.MESSAGES.QUESTION(date));
       if (msg) {
         storage.setReportMessageId(msg.message_id);
       }
