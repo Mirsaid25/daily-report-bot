@@ -7,6 +7,8 @@ export const CONFIG = {
   ADMIN_ID: process.env.ADMIN_ID!,
   TELEGRAM_TOKEN: process.env.TELEGRAM_TOKEN!,
   NOTION_TOKEN: process.env.NOTION_TOKEN!,
+  SERVICE_URL: process.env.SERVICE_URL!,
+  PORT: Number(process.env.PORT) || 10000,
   TIME: {
     MORNING_QUESTION: '0 21 * * *',
     REMINDER_1: '0 22 * * *',

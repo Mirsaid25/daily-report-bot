@@ -8,7 +8,7 @@ import { CONFIG } from './config/config';
 
 async function main() {
   try {
-    // === Инициализация бота ===
+    // === Инициализация команд и расписаний (оно будет работать в фоне) ===
     await botHandlers.getGroupMembers().init();
     botHandlers.setupCommands();
     setupScheduler(botFunctions);
@@ -31,23 +31,40 @@ async function main() {
       })
     );
 
-    await bot.launch();
-    logger.info('🤖 Bot started');
-
-    // === HTTP-сервер для Render ===
+    // === Express HTTP-сервер ===
     const app = express();
+    app.use(express.json()); // для парсинга JSON от Telegram
 
-    // Render по умолчанию выставляет PORT=10000, но можно переопределить в Dashboard
-    const port = Number(process.env.PORT) || 10000;
+    const port = CONFIG.PORT || 10000;
     const host = '0.0.0.0';
 
-    app.get('/', (req: Request, res: Response, next: NextFunction) => {
+    // Путь, на который Telegram будет шлать обновления:
+    const webhookPath = `/webhook/${CONFIG.TELEGRAM_TOKEN}`;
+    const serviceUrl = CONFIG.SERVICE_URL!; 
+    // SERVICE_URL = https://your-app.onrender.com — задайте в Render Dashboard как ENV
+
+    // Устанавливаем вебхук в Telegram
+    await bot.telegram.setWebhook(`${serviceUrl}${webhookPath}`);
+    logger.info(`Webhook set to ${serviceUrl}${webhookPath}`);
+
+    // Маршрут для Telegram обновлений
+    app.post(webhookPath, (req: Request, res: Response) => {
+      bot.handleUpdate(req.body, res).catch((err) => {
+        logger.error('handleUpdate error:', err);
+        res.sendStatus(500);
+      });
+    });
+
+    // «Проверка здоровья» (Render смотрит на `/`)
+    app.get('/', (_req: Request, res: Response, _next: NextFunction) => {
       res.send('OK');
     });
 
     app.listen(port, host, () => {
       logger.info(`HTTP server listening on ${host}:${port}`);
     });
+
+    logger.info('🤖 Bot webhook launched');
   } catch (err) {
     logger.error('Startup error:', err);
     process.exit(1);

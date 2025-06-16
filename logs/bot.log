@@ -288,3 +288,10 @@
 {"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-16 21:21:27"}
 {"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-16 21:21:27"}
 {"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-16 21:21:32"}
+{"adminCount":2,"level":"info","message":"Bot initialized with admins","timestamp":"2025-06-17 00:40:36"}
+{"level":"info","message":"Bot commands setup completed","timestamp":"2025-06-17 00:40:36"}
+{"level":"info","message":"Scheduler setup completed","timestamp":"2025-06-17 00:40:36"}
+{"level":"info","message":"Webhook set to https://daily-report-bot-hp7a.onrender.com/webhook/8174798988:AAHD0o-665yInjfHwLOE2L-VpgsaTw-QlXo","timestamp":"2025-06-17 00:40:36"}
+{"level":"info","message":"🤖 Bot webhook launched","timestamp":"2025-06-17 00:40:36"}
+{"level":"info","message":"HTTP server listening on 0.0.0.0:10000","timestamp":"2025-06-17 00:40:36"}
+{"level":"info","message":"SIGINT received. Shutting down...","timestamp":"2025-06-17 00:40:43"}
